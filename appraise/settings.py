@@ -147,14 +147,13 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 INSTALLED_APPS = (
+  'django.contrib.admin',
   'django.contrib.auth',
   'django.contrib.contenttypes',
-  'django.contrib.sessions',
-  'django.contrib.sites',
-  'django.contrib.staticfiles',
-  'django.contrib.admin',
   'django.contrib.messages',
-
-  'appraise.wmt15',
+  'django.contrib.sessions',
+  'django.contrib.staticfiles',
+  'django.contrib.sites', # Not a default app
+  'appraise.wmt15', 
   'appraise.beta16',
 )
